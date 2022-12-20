@@ -1,19 +1,40 @@
 <!--
     File: index.html
     Patryk Piwowarczyk, patryk_piwowarczyk@student.uml.edu
-    Completed on 
-     
-    1.
+    Completed on 12/20/2022
 -->
-
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>SCRABBLE LET'S GOOOOOOOOO</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Scrabble Online</title>
   </head>
   <body>
-    <h1> Scrabble </h1>
+    <div class="container">
+      <header>
+        <br>Enjoy Your Game of Scrabble!<br><br>
+      </header>
+      <br><br><div class="scoreClass">Your Total Score Is: <span id="scoreID"></span>
+      </div>
+      <!-- Generate Location for Tiles-->
+      <div id="Tiles"></div>
+      <!-- Generate Location for the Scrabble Line -->
+      <br><div id="scrabble"></div>
+      <!-- Generate Location for Buttons -->
+      <div id="buttons"> <br>
+        <input type="submit" id="reset" value="Restart Game">
+        <input type="submit" id="submitW" value="Submit Word">
+        <input type="submit" id="retTiles" value="Return Tiles">
+      </div> <br>
+      <!-- Generate Location for the Remaining Tiles -->
+      <div id="remTiles"></div>
+    </div>
+    <!-- jQuery Plugins -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
   </body>
 </html>

@@ -1,0 +1,118 @@
+/*
+    File: style.css
+    Patryk Piwowarczyk, patryk_piwowarczyk@student.uml.edu
+    Completed on 12/20/2022
+*/
+
+.container {
+    position: center;
+	max-width: 1062px;
+	display: center;
+	margin: auto;
+}
+header, form, div, footer {
+    display: block;
+}
+body {
+    position: center !important;
+	min-width: 870px;
+	margin-left: 10%;
+	margin-right: 10%;
+	background: grey;
+}
+header {
+    margin-top: 5%;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 3px solid whitesmoke;
+	font-size: 30px;
+	color: black;
+	font-weight: bolder;
+}
+#Tiles {
+    margin-left: 200px;
+    margin-top: 5%;
+    position: relative !important;
+    text-align: center;
+    background-image: url("../images/scrabble-tile-holder-406774_640.png");
+    background-repeat: no-repeat; 
+}
+#buttons {
+    text-align: center;
+}
+/* Separate Css for each button for organization on the page */
+#reset {
+    width: 190px;
+	height: 43px;
+	border: 2px solid black;
+}
+#retTiles {
+    width: 190px;
+	height: 43px;
+	border: 2px solid black;
+}
+#submitW {
+	width: 190px;
+	height: 43px;
+	border: 2px solid black;
+}
+.scoreClass {
+    font-size: 20pt;
+	color: rgb(24, 11, 11);
+	font-weight: bolder;
+    text-align: center;
+	border-top: 2px solid whitesmoke;
+	border-bottom: 2px solid whitesmoke;
+}
+table.rTable {
+    margin: auto;
+	background-color: rgba(255, 255, 255, .5);
+}
+/* Remaining letters */
+.rTile{
+	border: 2px solid black;
+	padding: 3px;
+	text-align: center;
+}
+div#remTiles{
+	display: block;
+	margin-bottom: 50px;
+	text-align: center;
+}
+/* Affects the size of the tiles (the images of them) */
+img{
+	min-width: 50px;
+	max-width: 100px;
+	max-height: 50px;
+    padding: 10px;
+}
+#TileRack {
+    margin-left: 7%;
+    margin-right: 5%;
+}
+tr{
+	min-height: 60px;
+	max-width: 850px;
+	height: 60px;
+}
+td{
+	font-weight: bold;
+	width: 60px;
+	height:60px;
+	margin: auto;
+}
+/* regular letter cells in the Scrabble single line */
+td.regular{
+	text-align: center;
+	background: rgb(190, 158, 116);
+	border: 2px solid black;
+	font-size: 10pt;
+}
+/* Triple valued letter cells in the Scrabble single line */
+td.lTriple{
+	text-align: center;
+	background-color: rgb(95, 95, 236);
+	border: 2px solid black;
+	font-size: 10pt;
+}
